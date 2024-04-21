@@ -15,8 +15,8 @@ Car.prototype.getMakeModel = function() {
 // SportsCar constructor
 function SportsCar(make, model, topSpeed) {
   // Call parent constructor and initialize properties
-	super(make,model,topSpeed);
-	this.topSpeed=topSpeed;
+  Car.call(this, make, model);
+  this.topSpeed = topSpeed;
 }
 
 // Inherit from Car
