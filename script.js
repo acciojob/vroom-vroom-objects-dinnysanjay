@@ -6,10 +6,10 @@ function Car(make, model) {
 	this.model=model;
 }
 
-// Add method to Car's prototype
+
 Car.prototype.getMakeModel = function() {
   // Return make and model
-	return this.make and this.model;
+  return this.make + ' ' + this.model;
 }
 
 // SportsCar constructor
